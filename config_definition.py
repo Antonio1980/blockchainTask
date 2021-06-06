@@ -16,5 +16,9 @@ class BaseConfig:
     parser = get_parser(config_file)
 
     AMBER_API_URL = parser.get("URL's", "amber_api_url")
+    BINANCE_API_URL = parser.get("URL's", "binance_api_url")
+
     API_KEY = parser.get("ARG's", "api_key")
+    BINANCE_API_KEY = parser.get("ARG's", "binance_key")
+    BINANCE_SECRET = parser.get("ARG's", "binance_secret")
 
